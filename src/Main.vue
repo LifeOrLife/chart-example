@@ -69,10 +69,13 @@ var chartDom = document.getElementById('app')!;
 var myChart = echarts.init(chartDom);
 var option;
 
+
+
 option = {
   backgroundColor: '#000',
   globe: {
     baseTexture: 'src/bg4.jpg',
+    // baseTexture: texture,
     displacementScale: 0.1,
     shading: 'lambert',
     light: {

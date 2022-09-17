@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import Earth from './Main.vue'
 import LineAni from './LineAni.vue'
+import AutoMain from './AutoMain.vue'
 
 const current = ref('')
 const goto = (v: string) => {
@@ -14,7 +15,8 @@ const goto = (v: string) => {
 			<div class="earth" @click="goto('earth')">地球</div>
 			<div class="line" @click="goto('line')">路径动画</div>
 		</div>
-		<Earth v-if="current === 'earth'" />
+		<!-- <Earth v-if="current === 'earth'" /> -->
+		<AutoMain v-if="current === 'earth'" />
 		<LineAni v-if="current === 'line'" />
 	</div>
 </template>
